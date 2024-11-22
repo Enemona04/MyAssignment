@@ -1,0 +1,136 @@
+/* BASE CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+}
+
+#main-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin:0.2em 0.2em 0 0.2em;
+}
+
+ul li a{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: underline dotted; 
+}
+
+ul li a:hover{
+    color: #ff0000;
+}
+
+.section-one{
+    width: 100%;
+}
+
+.huck h1{
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 2em 1em 1em 1em ;
+    line-height: 0.5em;
+}
+
+.p-div{
+    width: 100%;
+}
+
+.p-div p{
+    padding: 1em 1em 1em 1.5em;
+    line-height: 1.5em;
+}
+
+span{
+    color: #008000;
+    font-weight: bold;
+}
+
+.blank{
+    width: 100%;
+    height: 2.5em;
+    background-color: #666666;
+    border-top: 0.3em solid #9b9999;
+}
+
+.section-two{
+    width: 100%;
+}
+
+.wealth h2{
+    width: 90%;
+    background-color: #ffbf00;
+    border-bottom: 0.3em solid #8a6803;
+    margin-top: 0.2em;
+    padding:0.5em 0 0.5em 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.wealth p{
+    padding: 1em 1em 1em 1.5em;
+    line-height: 1.5em;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width:768px){
+    nav ul{
+        justify-content: space-around;
+    }
+    .section-one{
+        width: 49%;
+    }
+    .wealth h2{
+        width: 50%;
+    }
+    .bottom-blank{
+        width: 100%;
+        height: 2.5em;
+        background-color: #666666;
+        border-top: 0.3em solid #9b9999;
+    }
+}
+
+@media(min-width:1024px){
+    .section-one{
+        width: 37%;
+        margin-left: 12em;
+    }
+    .p-div p:nth-of-type(2){
+        width: 80%;
+    }
+    .blank{
+        height: 0.1em;
+    }
+
+    .section-container{
+        background-color: #666666;
+        padding: 2em 0;
+    }
+    .section-two{
+        width: 60%;
+        margin-left: 12em;
+        padding-top: 0.2em;
+        background-color: #ffffff;
+        border-bottom: 0.5em solid #9b9999;
+    }
+    .wealth h2{
+        width: 65%;
+        margin-left: -1em;
+    }
+    .bottom-blank{
+        display: none;
+    }
+}

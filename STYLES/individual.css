@@ -1,0 +1,309 @@
+/* BASE CSS************************* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper{
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.container{
+    width: 95%;
+    background: #f7fdfc;
+    border: 0.0625em solid #000000;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.for{
+    margin: 1em 1em 3em 1em;
+}
+
+.for .first-logo img,
+.for .second-logo img{
+    width: 2em;
+    margin: 0.5em 0
+}
+
+.for h1{
+    margin: 0.5em 0;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.for p{
+    margin: 0;
+    color: #737373;
+    line-height: 1.5em;
+}
+
+.for .first-logo{
+    display: none;
+}
+
+/* NAVBAR SECTION********************************** */
+
+header{
+    width: 100%;
+    padding: 0.5em 0 2em 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8em;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: underline dotted;
+}
+
+ul li a{
+    color: #0000ff;
+}
+
+ul li a:hover{
+    color: #ff0000;
+}
+
+.signup1{
+    margin:0 0 0.5em 0.8em;
+}
+
+.signup1 a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #878eeb;
+}
+
+.signup2{
+    margin:0 0 0.5em 0.8em;
+    display: none;
+}
+
+.signup2 a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #1d2bf4;
+}
+
+
+/* FORM SECTION********************************* */
+
+.form-footer{
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 0 1em;
+    box-shadow: 0 0.25em 3.125em 0 #0408131A;
+}
+
+.fn label{
+    font-weight: bold;
+}
+
+.fn input{
+    margin: 0.5em 0 1.3em 0;
+    height: 3.5em;
+    width: 100%;
+    border:  0.0625em solid #f0f0f0;
+    outline: none;
+}
+
+.fn input::placeholder{
+    padding-left: 1em;
+    color: #737373;
+}
+
+.dob label{
+    font-weight: bold;
+}
+
+.dob select, .dob input{
+    margin: 0.5em 0 1.3em 0;
+    height: 3.5em;
+    width: 100%;
+    border:  0.0625em solid #f0f0f0;
+    outline: none;
+}
+
+#gd:nth-of-type(1){
+    padding-left: 1em;
+    color: #737373;
+}
+
+#gd option{
+    color: #000000;
+    font-weight: bold;
+}
+
+.dob input[type="date"]{
+    padding-left: 1em;
+    color: #737373;
+}
+
+.kgcm label{
+    font-weight: bold;
+}
+
+.kgcm input{
+    margin: 0.5em 0 1.3em 0;
+    height: 3.5em;
+    width: 100%;
+    border:  0.0625em solid #f0f0f0;
+    outline: none;
+}
+
+.kgcm input::placeholder{
+    padding-left: 1em;
+    color: #737373;
+}
+
+#activity label{
+    font-weight: bold;
+}
+
+#act{
+    margin: 0.5em 0 1.3em 0;
+    height: 3.5em;
+    width: 100%;
+    border:  0.0625em solid #f0f0f0;
+    outline: none;
+}
+
+#act:nth-of-type(1){
+    padding-left: 1em;
+    color: #737373;
+}
+
+#act option{
+    color: #000000;
+    font-weight: bold;
+}
+
+.password label{
+    font-weight: bold;
+}
+
+.password input{
+    margin: 0.5em 0 1.3em 0;
+    height: 3.5em;
+    width: 100%;
+    border:  0.0625em solid #f0f0f0;
+    outline: none;
+}
+
+.password input::placeholder{
+    padding-left: 1em;
+    color: #737373;
+}
+
+button{
+    margin: 0.5em 0 1.3em 0;
+    height: 3.5em;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #2ec2b3;
+    border: none;
+}
+
+footer  p{
+    padding: 1em 1em 1.5em 1em;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+span{
+    font-weight: bold;
+    color: #2ec2b3;
+    text-decoration: underline;
+}
+
+
+
+/* MEDIA QUERY TABLET ****************************** */
+
+@media (min-width:768px){
+    .signup1{
+        display: none;
+    }
+    .signup2{
+        display: block;
+        margin-left: 1.9em;
+    }
+    .for .second-logo{
+        display: none;
+    }
+    .for .first-logo{
+        display: block;
+    }
+    .first-logo{
+        margin-top: 5em;
+    }
+    .for .first-logo img{
+        width: 5em;
+    }
+    .first-logo h1{
+        font-size: 1.6em;
+    }
+    .first-logo p{
+        font-size: 1em;
+    }
+    .container{
+        display: flex;
+    }
+    .form-footer{
+        width: 80em;
+        margin: 2em ;
+    }
+    .form{
+        display: flex;
+    }
+    .name, .kg-cm{
+        display: flex;
+        gap: 1em;
+    }
+    .fn, .kgcm{
+        height: 3em;
+        width: 100%;
+        margin-top: 2.5em;
+    }
+    #gender-dob{
+        display: flex;
+        gap: 1em;
+        margin-top: 2.5em;
+    }
+    .dob select, .dob {
+        height: 3em;
+        width: 100%;
+    }
+    #activity{
+        margin-top: 2.5em;
+    }
+}
+
+/* MEDIA QUERY LAPTOP****************************** */
+
+@media(min-width:1024px){
+    .signup2{
+        margin-left: 2.5em;
+    }
+}
+
